@@ -1,0 +1,18 @@
+{
+  "liberusoftware/tenancy": {
+    "path": "modules/tenancy",
+    "reference": "5c079502cf9c82c304f37eab141c8c7d5a77b2b7",
+    "repository": "https://github.com/liberusoftware/module-tenancy",
+    "source_signature": "d469d350ee02b7822a5fa89a3d1bcf1bbd06fa4f8e46fc06e6644ffc88c0b8e5",
+    "source_tree": "04f69949afdcdb6c12817d536fee1706df06aa5d",
+    "version": "1.2.2"
+  },
+  "liberusoftware/theme-support": {
+    "path": "modules/theme-support",
+    "reference": "2054ff4ca044b5fae23c7d8ad62e30f3103cbcd2",
+    "repository": "https://github.com/liberusoftware/module-theme-support",
+    "source_signature": "30b7fa4a0c18515b3efe01d7d9dabe63b2d2be0b7c6c551149fdd6e7e3977c75",
+    "source_tree": "b86dc53e5391f4ea2c8485db79c0437da049783a",
+    "version": "1.8.2"
+  }
+}
