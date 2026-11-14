@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.9.1 - 2026-11-13
+
+- Fix validation reporting "Composer package is not installed" for a module Composer installed under its `liberusoftware/module-liberu-*` name. The validator now accepts the declared name as well as the canonical `liberusoftware/liberu-*` one.
+
+## 1.9.0 - 2026-11-10
+
+- `ModuleManagement::modules()` includes each module's manifest description, and `Manifest` gains `description()`.
+- Add the optional manifest key `module_type`, `feature` or `infrastructure`, defaulting to `infrastructure`. `ModuleManagement` lists and switches only feature modules, so infrastructure such as this package never appears as something to turn off.
+
+## 1.8.0 - 2026-11-10
+
+- Add `ModuleManagement`: lists Composer-installed modules with their installed version and status, and enables or disables them. A choice is stored in the new `module_activations` table and applied at the next boot; Composer still installs and removes packages. Required modules, modules in `MODULES_DISABLED` and modules Laravel auto-discovers cannot be changed, and a change that would leave a module without a dependency is refused.
+
+## 1.7.0 - 2026-11-06
+
+- Add opt-in failure isolation. With `modules.isolate_failures`, a module that fails discovery, validation, dependency resolution or provider registration is left out and reported, and the rest of the application boots. Off by default, so existing hosts still fail fast.
+- Add `modules.required`, for modules a host cannot run without. With isolation on, these cannot be disabled, and a failure among them still stops the boot with the module's name.
+- Add `ModuleLoader`, `ModuleInventory` and `ModuleDiscovery::discoverTolerant()`.
+- `module:list` gains `--json` and Kind, Status and Problems columns. `module:status` gains status, kind and problems. `module:validate` reports invalid manifests one by one, warns when Laravel package discovery registers a module, and fails on that with `--strict`.
+- With isolation on, `module:cache` validates first, because a cached boot then skips validation.
+- Fix discovery rejecting identical copies of a module under two roots.
+
 ## 1.2.1 - 2026-08-06
 
 - Split CI into the three workflows `CONFORMANCE.md` §3.9 asks for, rather than one calling all
