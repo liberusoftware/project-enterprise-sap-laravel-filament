@@ -143,7 +143,17 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [
+                "liberusoftware/module-accounting-accounts-receivable",
+                "liberusoftware/module-accounting-chart-of-accounts",
+                "liberusoftware/module-accounting-core",
+                "liberusoftware/module-accounting-financial-master-data",
+                "liberusoftware/module-accounting-general-ledger",
+                "liberusoftware/module-accounting-periods",
+                "liberusoftware/module-accounting-sales-invoicing",
+                "liberusoftware/tenancy",
+                "liberusoftware/users-roles"
+            ]
         }
     },
     "config": {
