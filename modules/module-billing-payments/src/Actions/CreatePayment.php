@@ -1,0 +1,46 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Liberu\Billing\Payments\Actions;
+
+use Illuminate\Database\DatabaseManager;
+use Liberu\Billing\Payments\Enums\PaymentStatus;
+use Liberu\Billing\Payments\Events\PaymentCreated;
+use Liberu\Billing\Payments\Models\Payment;
+use Liberu\Billing\Payments\Support\CustomerReference;
+
+final readonly class CreatePayment
+{
+    public function __construct(private DatabaseManager $database) {}
+
+    /** @param array<string,mixed> $attributes */
+    public function execute(array $attributes): Payment
+    {
+        $amount = (int) ($attributes['amount_minor'] ?? 0);
+        $currency = strtoupper((string) ($attributes['currency'] ?? ''));
+        if ($amount < 1 || ! preg_match('/^[A-Z]{3}$/', $currency)) {
+            throw new \InvalidArgumentException('Payment amount and currency are invalid.');
+        }
+
+        $teamId = $attributes['team_id'] ?? null;
+        $customerId = CustomerReference::assertBelongsToTeam($this->database, $attributes['customer_id'] ?? null, $teamId);
+
+        return $this->database->transaction(function () use ($teamId, $customerId, $amount, $currency, $attributes): Payment {
+            $payment = Payment::query()->create([
+                'team_id' => $teamId,
+                'customer_id' => $customerId,
+                'amount_minor' => $amount,
+                'currency' => $currency,
+                'status' => PaymentStatus::Pending,
+                'payment_method' => $attributes['payment_method'] ?? null,
+                'gateway' => $attributes['gateway'] ?? null,
+                'refunded_minor' => 0,
+                'metadata' => $attributes['metadata'] ?? [],
+            ]);
+            PaymentCreated::dispatch($payment);
+
+            return $payment;
+        });
+    }
+}

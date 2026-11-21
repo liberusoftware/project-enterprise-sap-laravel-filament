@@ -1,5 +1,6 @@
 <?php
 
+use Composer\InstalledVersions;
 use Liberu\Foundation\ModuleManager\Exceptions\DependencyResolutionFailed;
 use Liberu\Foundation\ModuleManager\Manifest;
 use Liberu\Foundation\ModuleManager\ModuleRegistry;
@@ -139,7 +140,10 @@ it('lets Composer own every module and theme autoload boundary', function () {
 
     foreach (array_merge(glob($root.'/modules/*/composer.json') ?: [], glob($root.'/themes/*/composer.json') ?: []) as $packageFile) {
         $package = json_decode(file_get_contents($packageFile), true, flags: JSON_THROW_ON_ERROR);
-        expect($composer['require'])->toHaveKey($package['name']);
+        $installedPath = InstalledVersions::getInstallPath($package['name']);
+
+        expect($installedPath)->toBeString()
+            ->and(realpath($installedPath))->toBe(realpath(dirname($packageFile)));
     }
 });
 
