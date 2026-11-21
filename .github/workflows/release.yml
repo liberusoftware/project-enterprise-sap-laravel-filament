@@ -21,6 +21,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
+          ref: refs/tags/${{ inputs.tag || github.ref_name }}
 
       - name: Setup PHP
         uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962 # 2.40.0
@@ -44,6 +45,9 @@ jobs:
 
       - name: Generate application key
         run: php artisan key:generate
+
+      - name: Validate module boundaries
+        run: php artisan module:validate --strict
 
       - name: Run tests
         run: php artisan test --no-coverage

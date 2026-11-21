@@ -1,5 +1,42 @@
 # Changelog
 
+## 1.11.2 - 2026-11-14
+
+- Add host contract tests for the optional operations page, including guest, non-admin and admin access and registry projection.
+- These contracts run when a host provides the page and its observability actor contract; standalone packages without that extension skip them.
+
+## 1.11.1 - 2026-11-14
+
+- Test real Filament module table rendering, action visibility, enabling and disabling, activation refusal and revoked authorization.
+- Require 100% native source coverage in CI.
+
+## 1.11.0 - 2026-11-13
+
+- The Modules page moves from the Operations navigation group to Settings. Nothing else changes.
+
+## 1.10.0 - 2026-11-11
+
+- Remove the Foundation Operations page (`/foundation-operations`) and its navigation entry. The Modules page is now the only page, and the `viewModuleDiagnostics` gate and the optional `liberusoftware/observability` suggestion are no longer used.
+
+## 1.9.0 - 2026-11-10
+
+- The Modules page lists only feature modules, the ones whose manifest declares `"module_type": "feature"`; infrastructure no longer appears. Requires `liberusoftware/module-manager` ^1.9.
+- Each module's description from its manifest shows under its name.
+- Enable and Disable are solid buttons of the same size, and status is an Enabled, Disabled or Failed badge.
+- With no feature module installed, the table says so and how to install one with Composer.
+
+## 1.8.0 - 2026-11-10
+
+- Add the Modules page: installed modules with their version and status, and working Enable and Disable actions. Access follows the host's `manageModules` gate and is denied when it is not defined.
+
+## 1.7.0 - 2026-11-06
+
+- Authorize the page through a `viewModuleDiagnostics` gate the host defines, and stop requiring `liberusoftware/observability`. Without the gate, a user implementing `ObservabilityActor` still gets in through `isAdmin()`, so existing hosts keep working; with neither, access is denied.
+
+## 1.6.0 - 2026-11-06
+
+- Show each module's kind, status and problems, including modules that failed to load, when the installed `module-manager` provides `ModuleInventory`. With an older release the page is unchanged.
+
 ## 1.2.2 - 2026-08-06
 
 - Split CI into the three workflows `CONFORMANCE.md` §3.9 asks for, rather than one calling all

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c6e0c5cec3ae1f01fe677212e4b0185",
+    "content-hash": "a1c498d171050ca1ffef8c869be265f7",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -125,6 +125,83 @@
                 "source": "https://github.com/Bacon/BaconQrCode/tree/v3.1.1"
             },
             "time": "2026-04-05T21:06:35+00:00"
+        },
+        {
+            "name": "barryvdh/laravel-dompdf",
+            "version": "v3.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-dompdf.git",
+                "reference": "ee3b72b19ccdf57d0243116ecb2b90261344dedc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-dompdf/zipball/ee3b72b19ccdf57d0243116ecb2b90261344dedc",
+                "reference": "ee3b72b19ccdf57d0243116ecb2b90261344dedc",
+                "shasum": ""
+            },
+            "require": {
+                "dompdf/dompdf": "^3.0",
+                "illuminate/support": "^9|^10|^11|^12|^13.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.7|^3.0",
+                "orchestra/testbench": "^7|^8|^9.16|^10|^11.0",
+                "phpro/grumphp": "^2.5",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "PDF": "Barryvdh\\DomPDF\\Facade\\Pdf",
+                        "Pdf": "Barryvdh\\DomPDF\\Facade\\Pdf"
+                    },
+                    "providers": [
+                        "Barryvdh\\DomPDF\\ServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\DomPDF\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "A DOMPDF Wrapper for Laravel",
+            "keywords": [
+                "dompdf",
+                "laravel",
+                "pdf"
+            ],
+            "support": {
+                "issues": "https://github.com/barryvdh/laravel-dompdf/issues",
+                "source": "https://github.com/barryvdh/laravel-dompdf/tree/v3.1.2"
+            },
+            "funding": [
+                {
+                    "url": "https://fruitcake.nl",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/barryvdh",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-02-21T08:51:10+00:00"
         },
         {
             "name": "bezhansalleh/filament-plugin-essentials",
@@ -1680,6 +1757,161 @@
                 "source": "https://github.com/doctrine/sql-formatter/tree/1.5.4"
             },
             "time": "2026-02-08T16:21:46+00:00"
+        },
+        {
+            "name": "dompdf/dompdf",
+            "version": "v3.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dompdf/dompdf.git",
+                "reference": "6d4b4eb8500f7a786da8868ba463a71b725a4005"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/6d4b4eb8500f7a786da8868ba463a71b725a4005",
+                "reference": "6d4b4eb8500f7a786da8868ba463a71b725a4005",
+                "shasum": ""
+            },
+            "require": {
+                "dompdf/php-font-lib": "^1.0.0",
+                "dompdf/php-svg-lib": "^1.0.0",
+                "ext-dom": "*",
+                "ext-mbstring": "*",
+                "masterminds/html5": "^2.0",
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "ext-gd": "*",
+                "ext-json": "*",
+                "ext-zip": "*",
+                "mockery/mockery": "^1.3",
+                "phpunit/phpunit": "^7.5 || ^8 || ^9 || ^10 || ^11",
+                "squizlabs/php_codesniffer": "^3.5",
+                "symfony/process": "^4.4 || ^5.4 || ^6.2 || ^7.0"
+            },
+            "suggest": {
+                "ext-gd": "Needed to process images",
+                "ext-gmagick": "Improves image processing performance",
+                "ext-imagick": "Improves image processing performance",
+                "ext-zlib": "Needed for pdf stream compression"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dompdf\\": "src/"
+                },
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "The Dompdf Community",
+                    "homepage": "https://github.com/dompdf/dompdf/blob/master/AUTHORS.md"
+                }
+            ],
+            "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
+            "homepage": "https://github.com/dompdf/dompdf",
+            "support": {
+                "issues": "https://github.com/dompdf/dompdf/issues",
+                "source": "https://github.com/dompdf/dompdf/tree/v3.1.6"
+            },
+            "time": "2026-07-20T12:29:38+00:00"
+        },
+        {
+            "name": "dompdf/php-font-lib",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dompdf/php-font-lib.git",
+                "reference": "a6e9a688a2a80016ac080b97be73d3e10c444c9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dompdf/php-font-lib/zipball/a6e9a688a2a80016ac080b97be73d3e10c444c9a",
+                "reference": "a6e9a688a2a80016ac080b97be73d3e10c444c9a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5 || ^8 || ^9 || ^10 || ^11 || ^12"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FontLib\\": "src/FontLib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "The FontLib Community",
+                    "homepage": "https://github.com/dompdf/php-font-lib/blob/master/AUTHORS.md"
+                }
+            ],
+            "description": "A library to read, parse, export and make subsets of different types of font files.",
+            "homepage": "https://github.com/dompdf/php-font-lib",
+            "support": {
+                "issues": "https://github.com/dompdf/php-font-lib/issues",
+                "source": "https://github.com/dompdf/php-font-lib/tree/1.0.2"
+            },
+            "time": "2026-01-20T14:10:26+00:00"
+        },
+        {
+            "name": "dompdf/php-svg-lib",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dompdf/php-svg-lib.git",
+                "reference": "8259ffb930817e72b1ff1caef5d226501f3dfeb1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dompdf/php-svg-lib/zipball/8259ffb930817e72b1ff1caef5d226501f3dfeb1",
+                "reference": "8259ffb930817e72b1ff1caef5d226501f3dfeb1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^7.1 || ^8.0",
+                "sabberworm/php-css-parser": "^8.4 || ^9.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5 || ^8 || ^9 || ^10 || ^11"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Svg\\": "src/Svg"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "The SvgLib Community",
+                    "homepage": "https://github.com/dompdf/php-svg-lib/blob/master/AUTHORS.md"
+                }
+            ],
+            "description": "A library to read, parse and export to PDF SVG files.",
+            "homepage": "https://github.com/dompdf/php-svg-lib",
+            "support": {
+                "issues": "https://github.com/dompdf/php-svg-lib/issues",
+                "source": "https://github.com/dompdf/php-svg-lib/tree/1.0.2"
+            },
+            "time": "2026-01-02T16:01:13+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -6088,6 +6320,40 @@
             "time": "2026-11-14T02:39:09+00:00"
         },
         {
+            "name": "liberusoftware/ecommerce-contracts",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/ecommerce-contracts.git",
+                "reference": "746e559952517b6df94403cd59c81fff400eb28a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/ecommerce-contracts/zipball/746e559952517b6df94403cd59c81fff400eb28a",
+                "reference": "746e559952517b6df94403cd59c81fff400eb28a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Liberu\\Ecommerce\\Contracts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "The stable boundary between the Liberu ecommerce core and independently distributed modules.",
+            "support": {
+                "issues": "https://github.com/liberusoftware/ecommerce-contracts/issues",
+                "source": "https://github.com/liberusoftware/ecommerce-contracts/tree/v1.2.0"
+            },
+            "time": "2026-11-14T14:22:29+00:00"
+        },
+        {
             "name": "liberusoftware/feature-flags",
             "version": "1.4.14",
             "source": {
@@ -6277,12 +6543,6 @@
                 "url": "https://github.com/liberusoftware/module-identity-socialstream.git",
                 "reference": "6f1562d9e9dfbc0246446b11b6b5c7f5ef0d6c1d"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-identity-socialstream/zipball/6f1562d9e9dfbc0246446b11b6b5c7f5ef0d6c1d",
-                "reference": "6f1562d9e9dfbc0246446b11b6b5c7f5ef0d6c1d",
-                "shasum": ""
-            },
             "require": {
                 "bursteri/socialstream": "^7.0.0",
                 "laravel/socialite": "^5.31.0",
@@ -6307,15 +6567,20 @@
                     "Liberu\\Foundation\\Identity\\Socialstream\\Database\\Factories\\": "database/factories/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\Identity\\Socialstream\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Socialstream/Socialite identity-linking provider adapter.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-identity-socialstream/issues",
-                "source": "https://github.com/liberusoftware/module-identity-socialstream/tree/v1.8.2"
-            },
             "time": "2026-11-14T16:27:20+00:00"
         },
         {
@@ -6366,17 +6631,11 @@
         },
         {
             "name": "liberusoftware/integrations",
-            "version": "1.8.1",
+            "version": "1.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-integrations.git",
-                "reference": "3dbbd7e7c141b183c54ae6e71202efcfc7fa5505"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-integrations/zipball/3dbbd7e7c141b183c54ae6e71202efcfc7fa5505",
-                "reference": "3dbbd7e7c141b183c54ae6e71202efcfc7fa5505",
-                "shasum": ""
+                "reference": "57e4abb5fa2da5cc0ece6115a706726e1889fd6b"
             },
             "require": {
                 "illuminate/database": "^13.38.0",
@@ -6399,16 +6658,21 @@
                     "Liberu\\Foundation\\Integrations\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\Integrations\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Provider adapter registry and protected connection lifecycle.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-integrations/issues",
-                "source": "https://github.com/liberusoftware/module-integrations/tree/v1.8.1"
-            },
-            "time": "2026-11-13T15:34:27+00:00"
+            "time": "2026-11-14T15:23:44+00:00"
         },
         {
             "name": "liberusoftware/jetstream-bridge",
@@ -6501,12 +6765,6 @@
                 "url": "https://github.com/liberusoftware/module-localization-core.git",
                 "reference": "58ad01d917179b5b06e0a45e49314fb006738a16"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-localization-core/zipball/58ad01d917179b5b06e0a45e49314fb006738a16",
-                "reference": "58ad01d917179b5b06e0a45e49314fb006738a16",
-                "shasum": ""
-            },
             "require": {
                 "illuminate/contracts": "^13.38.0",
                 "illuminate/http": "^13.38.0",
@@ -6531,30 +6789,32 @@
                     "Liberu\\Foundation\\Localization\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\Localization\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ],
+                "test:coverage": [
+                    "pest --coverage --min=100"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Locale resolution, preferences, propagation, and UI direction for Liberu applications.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-localization-core/issues",
-                "source": "https://github.com/liberusoftware/module-localization-core/tree/v1.5.1"
-            },
             "time": "2026-11-14T01:53:34+00:00"
         },
         {
             "name": "liberusoftware/localization-core-livewire",
-            "version": "1.5.2",
+            "version": "1.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-localization-core-livewire.git",
-                "reference": "94fc0fbc1f82d1a9edd821eaacf33a71a4c1946e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-localization-core-livewire/zipball/94fc0fbc1f82d1a9edd821eaacf33a71a4c1946e",
-                "reference": "94fc0fbc1f82d1a9edd821eaacf33a71a4c1946e",
-                "shasum": ""
+                "reference": "84a43c5795e115f781ca757ef488537e594b4602"
             },
             "require": {
                 "liberusoftware/localization-core": "^1.0",
@@ -6577,16 +6837,21 @@
                     "Liberu\\Foundation\\LocalizationLivewire\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\LocalizationLivewire\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Livewire locale-switching presentation adapter for Liberu Localization.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-localization-core-livewire/issues",
-                "source": "https://github.com/liberusoftware/module-localization-core-livewire/tree/v1.5.2"
-            },
-            "time": "2026-11-02T16:49:50+00:00"
+            "time": "2026-11-14T14:23:26+00:00"
         },
         {
             "name": "liberusoftware/localization-mymemory",
@@ -6595,12 +6860,6 @@
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-localization-mymemory.git",
                 "reference": "1c453269cd2439f792b6d2e64238d91ffe91ce1a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-localization-mymemory/zipball/1c453269cd2439f792b6d2e64238d91ffe91ce1a",
-                "reference": "1c453269cd2439f792b6d2e64238d91ffe91ce1a",
-                "shasum": ""
             },
             "require": {
                 "illuminate/cache": "^13.38.0",
@@ -6624,16 +6883,584 @@
                     "Liberu\\Foundation\\Localization\\MyMemory\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\Localization\\MyMemory\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "MyMemory machine-translation adapter for Liberu Localization.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-localization-mymemory/issues",
-                "source": "https://github.com/liberusoftware/module-localization-mymemory/tree/v1.5.1"
-            },
             "time": "2026-11-14T17:12:57+00:00"
+        },
+        {
+            "name": "liberusoftware/module-accounting-accounts-receivable",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-accounting-accounts-receivable.git",
+                "reference": "1be9602ebdef401c6b6f38e4bb3109a7cd6e4256"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-accounts-receivable/zipball/1be9602ebdef401c6b6f38e4bb3109a7cd6e4256",
+                "reference": "1be9602ebdef401c6b6f38e4bb3109a7cd6e4256",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^13.38.0",
+                "illuminate/events": "^13.38.0",
+                "illuminate/support": "^13.38.0",
+                "liberusoftware/module-accounting-core": "^1.0",
+                "liberusoftware/module-accounting-financial-master-data": "^1.0",
+                "liberusoftware/module-accounting-sales-invoicing": "^1.0",
+                "php": "^8.5"
+            },
+            "type": "liberu-module",
+            "extra": {
+                "liberu": {
+                    "name": "accounting-accounts-receivable"
+                },
+                "laravel": {
+                    "providers": [
+                        "Liberu\\Accounting\\AccountsReceivable\\AccountsReceivableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Liberu\\Accounting\\AccountsReceivable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Independent Accounts Receivable domain module for Liberu Accounting.",
+            "support": {
+                "issues": "https://github.com/liberusoftware/module-accounting-accounts-receivable/issues",
+                "source": "https://github.com/liberusoftware/module-accounting-accounts-receivable/tree/v1.0.0"
+            },
+            "time": "2026-10-26T23:15:41+00:00"
+        },
+        {
+            "name": "liberusoftware/module-accounting-chart-of-accounts",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-accounting-chart-of-accounts.git",
+                "reference": "5d180ef96e39f05e0ed31d790f57e98f6a7b2cd8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-chart-of-accounts/zipball/5d180ef96e39f05e0ed31d790f57e98f6a7b2cd8",
+                "reference": "5d180ef96e39f05e0ed31d790f57e98f6a7b2cd8",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^13.38.0",
+                "illuminate/support": "^13.38.0",
+                "liberusoftware/module-accounting-core": "^1.0",
+                "php": "^8.5"
+            },
+            "require-dev": {
+                "liberusoftware/package-testbench": "^1.5",
+                "pestphp/pest": "^5.3.3"
+            },
+            "type": "liberu-module",
+            "extra": {
+                "liberu": {
+                    "name": "accounting-chart-of-accounts"
+                },
+                "laravel": {
+                    "providers": [
+                        "Liberu\\Accounting\\ChartOfAccounts\\ChartOfAccountsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Liberu\\Accounting\\ChartOfAccounts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Provider-neutral chart of accounts, hierarchy, controls, templates, and lifecycle rules.",
+            "support": {
+                "issues": "https://github.com/liberusoftware/module-accounting-chart-of-accounts/issues",
+                "source": "https://github.com/liberusoftware/module-accounting-chart-of-accounts/tree/v1.0.0"
+            },
+            "time": "2026-10-26T23:18:19+00:00"
+        },
+        {
+            "name": "liberusoftware/module-accounting-core",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-accounting-core.git",
+                "reference": "7ea5e8e483445eba7f0d55a2c2408bfbc995c108"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-core/zipball/7ea5e8e483445eba7f0d55a2c2408bfbc995c108",
+                "reference": "7ea5e8e483445eba7f0d55a2c2408bfbc995c108",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^13.38.0",
+                "illuminate/support": "^13.38.0",
+                "liberusoftware/module-manager": "^1.0",
+                "php": "^8.5"
+            },
+            "require-dev": {
+                "liberusoftware/package-testbench": "^1.5",
+                "pestphp/pest": "^5.3.3"
+            },
+            "type": "liberu-module",
+            "extra": {
+                "liberu": {
+                    "name": "accounting-core"
+                },
+                "laravel": {
+                    "providers": [
+                        "Liberu\\Accounting\\Core\\AccountingCoreServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Liberu\\Accounting\\Core\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Provider-neutral legal entities, books, currencies, fiscal calendars, numbering, defaults, policies, and events.",
+            "support": {
+                "issues": "https://github.com/liberusoftware/module-accounting-core/issues",
+                "source": "https://github.com/liberusoftware/module-accounting-core/tree/v1.1.0"
+            },
+            "time": "2026-11-02T14:54:16+00:00"
+        },
+        {
+            "name": "liberusoftware/module-accounting-financial-master-data",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-accounting-financial-master-data.git",
+                "reference": "1b2c3eb57f77be5478e081342e9fd01797e15777"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-financial-master-data/zipball/1b2c3eb57f77be5478e081342e9fd01797e15777",
+                "reference": "1b2c3eb57f77be5478e081342e9fd01797e15777",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^13.38.0",
+                "illuminate/support": "^13.38.0",
+                "liberusoftware/module-accounting-core": "^1.0",
+                "php": "^8.5"
+            },
+            "require-dev": {
+                "liberusoftware/package-testbench": "^1.5",
+                "pestphp/pest": "^5.3.3"
+            },
+            "type": "liberu-module",
+            "extra": {
+                "liberu": {
+                    "name": "accounting-financial-master-data"
+                },
+                "laravel": {
+                    "providers": [
+                        "Liberu\\Accounting\\FinancialMasterData\\FinancialMasterDataServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Liberu\\Accounting\\FinancialMasterData\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Provider-neutral accounting customers, suppliers, items, tax profiles, payment terms, addresses, and bank references.",
+            "support": {
+                "issues": "https://github.com/liberusoftware/module-accounting-financial-master-data/issues",
+                "source": "https://github.com/liberusoftware/module-accounting-financial-master-data/tree/v1.0.0"
+            },
+            "time": "2026-11-02T15:00:24+00:00"
+        },
+        {
+            "name": "liberusoftware/module-accounting-general-ledger",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-accounting-general-ledger.git",
+                "reference": "9fcb4b2abd6d1eee6b5d66892e052fef3ee81e6d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-general-ledger/zipball/9fcb4b2abd6d1eee6b5d66892e052fef3ee81e6d",
+                "reference": "9fcb4b2abd6d1eee6b5d66892e052fef3ee81e6d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^13.38.0",
+                "illuminate/support": "^13.38.0",
+                "liberusoftware/module-accounting-chart-of-accounts": "^1.0",
+                "liberusoftware/module-accounting-core": "^1.0",
+                "php": "^8.5"
+            },
+            "type": "liberu-module",
+            "extra": {
+                "liberu": {
+                    "name": "accounting-general-ledger"
+                },
+                "laravel": {
+                    "providers": [
+                        "Liberu\\Accounting\\GeneralLedger\\GeneralLedgerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Liberu\\Accounting\\GeneralLedger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Journals, balanced postings, reversals, corrections, allocations, accruals, prepayments, and balances.",
+            "support": {
+                "issues": "https://github.com/liberusoftware/module-accounting-general-ledger/issues",
+                "source": "https://github.com/liberusoftware/module-accounting-general-ledger/tree/v1.0.1"
+            },
+            "time": "2026-11-14T14:24:03+00:00"
+        },
+        {
+            "name": "liberusoftware/module-accounting-periods",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-accounting-periods.git",
+                "reference": "937661a849dcfd02f13181613bc90a08c75aef50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-periods/zipball/937661a849dcfd02f13181613bc90a08c75aef50",
+                "reference": "937661a849dcfd02f13181613bc90a08c75aef50",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^13.38.0",
+                "illuminate/support": "^13.38.0",
+                "liberusoftware/module-accounting-core": "^1.0",
+                "php": "^8.5"
+            },
+            "type": "liberu-module",
+            "extra": {
+                "liberu": {
+                    "name": "accounting-periods"
+                },
+                "laravel": {
+                    "providers": [
+                        "Liberu\\Accounting\\Periods\\AccountingPeriodsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Liberu\\Accounting\\Periods\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Accounting period states, posting controls, locks, reopen approval, and evidence.",
+            "support": {
+                "issues": "https://github.com/liberusoftware/module-accounting-periods/issues",
+                "source": "https://github.com/liberusoftware/module-accounting-periods/tree/v1.0.0"
+            },
+            "time": "2026-11-02T15:44:54+00:00"
+        },
+        {
+            "name": "liberusoftware/module-accounting-sales-invoicing",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-accounting-sales-invoicing.git",
+                "reference": "91952ac83dcfc44c1a5a967b33c91f9810daa973"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-sales-invoicing/zipball/91952ac83dcfc44c1a5a967b33c91f9810daa973",
+                "reference": "91952ac83dcfc44c1a5a967b33c91f9810daa973",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^13.38.0",
+                "illuminate/support": "^13.38.0",
+                "liberusoftware/module-accounting-core": "^1.0",
+                "liberusoftware/module-accounting-financial-master-data": "^1.0",
+                "php": "^8.5"
+            },
+            "type": "liberu-module",
+            "extra": {
+                "liberu": {
+                    "name": "accounting-sales-invoicing"
+                },
+                "laravel": {
+                    "providers": [
+                        "Liberu\\Accounting\\SalesInvoicing\\SalesInvoicingServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Liberu\\Accounting\\SalesInvoicing\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Draft, approved, final sales invoices with lines, tax, discounts, deposits, recurring sources, branding, delivery, and immutability.",
+            "support": {
+                "issues": "https://github.com/liberusoftware/module-accounting-sales-invoicing/issues",
+                "source": "https://github.com/liberusoftware/module-accounting-sales-invoicing/tree/v1.0.0"
+            },
+            "time": "2026-11-02T16:36:36+00:00"
+        },
+        {
+            "name": "liberusoftware/module-billing-billing-core",
+            "version": "0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-module-billing-billing-core.git",
+                "reference": "711b154b367a0cc8225710557d1e917cc529fe5f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-module-billing-billing-core/zipball/711b154b367a0cc8225710557d1e917cc529fe5f",
+                "reference": "711b154b367a0cc8225710557d1e917cc529fe5f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^13.38.0",
+                "illuminate/support": "^13.38.0",
+                "liberusoftware/module-manager": "^1.0",
+                "php": "^8.5"
+            },
+            "require-dev": {
+                "pestphp/pest": "^5.3.3"
+            },
+            "type": "liberu-module",
+            "extra": {
+                "liberu": {
+                    "name": "module-billing-billing-core"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Liberu\\Billing\\Core\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Framework-neutral billing accounts, contacts, currencies, tax profiles, sequences, terms, settings, and period primitives.",
+            "support": {
+                "issues": "https://github.com/liberusoftware/module-module-billing-billing-core/issues",
+                "source": "https://github.com/liberusoftware/module-module-billing-billing-core/tree/v0.1.3"
+            },
+            "time": "2026-10-26T23:16:32+00:00"
+        },
+        {
+            "name": "liberusoftware/module-billing-invoicing",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-module-billing-invoicing.git",
+                "reference": "7a5cb1fff8f11cd35a293c7f063c2d58f5d3b5fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-module-billing-invoicing/zipball/7a5cb1fff8f11cd35a293c7f063c2d58f5d3b5fb",
+                "reference": "7a5cb1fff8f11cd35a293c7f063c2d58f5d3b5fb",
+                "shasum": ""
+            },
+            "require": {
+                "barryvdh/laravel-dompdf": "^3.1.2",
+                "illuminate/database": "^13.38.0",
+                "illuminate/events": "^13.38.0",
+                "illuminate/support": "^13.38.0",
+                "liberusoftware/module-manager": "^1.0",
+                "php": "^8.5"
+            },
+            "type": "liberu-module",
+            "extra": {
+                "liberu": {
+                    "name": "module-billing-invoicing"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Liberu\\Billing\\Invoicing\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Provider-neutral invoicing schedules, lines, tax, credits, adjustments, PDFs, delivery, and finalization.",
+            "support": {
+                "issues": "https://github.com/liberusoftware/module-module-billing-invoicing/issues",
+                "source": "https://github.com/liberusoftware/module-module-billing-invoicing/tree/v0.1.0"
+            },
+            "time": "2026-11-02T14:12:45+00:00"
+        },
+        {
+            "name": "liberusoftware/module-billing-orders",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-module-billing-orders.git",
+                "reference": "a069f4232cd65b264fd8f313f47af2f6a659131e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-module-billing-orders/zipball/a069f4232cd65b264fd8f313f47af2f6a659131e",
+                "reference": "a069f4232cd65b264fd8f313f47af2f6a659131e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^13.38.0",
+                "illuminate/support": "^13.38.0",
+                "liberusoftware/module-manager": "^1.0",
+                "php": "^8.5"
+            },
+            "type": "liberu-module",
+            "extra": {
+                "liberu": {
+                    "name": "module-billing-orders"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Liberu\\Billing\\Orders\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Provider-neutral quotes, carts, checkout, fraud review, agreements, and orders for Liberu Billing.",
+            "support": {
+                "issues": "https://github.com/liberusoftware/module-module-billing-orders/issues",
+                "source": "https://github.com/liberusoftware/module-module-billing-orders/tree/v0.1.0"
+            },
+            "time": "2026-11-02T14:14:12+00:00"
+        },
+        {
+            "name": "liberusoftware/module-billing-payments",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-billing-payments.git",
+                "reference": "2fc2bcdde83a8c5fc25120c7966310c7385988e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-billing-payments/zipball/2fc2bcdde83a8c5fc25120c7966310c7385988e7",
+                "reference": "2fc2bcdde83a8c5fc25120c7966310c7385988e7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^13.38.0",
+                "illuminate/events": "^13.38.0",
+                "illuminate/support": "^13.38.0",
+                "liberusoftware/module-manager": "^1.0",
+                "php": "^8.5"
+            },
+            "type": "liberu-module",
+            "extra": {
+                "liberu": {
+                    "name": "module-billing-payments"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Liberu\\Billing\\Payments\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Provider-neutral payment methods, capture, allocation, refunds, disputes, and reconciliation.",
+            "support": {
+                "issues": "https://github.com/liberusoftware/module-billing-payments/issues",
+                "source": "https://github.com/liberusoftware/module-billing-payments/tree/v0.1.0"
+            },
+            "time": "2026-11-02T16:38:36+00:00"
+        },
+        {
+            "name": "liberusoftware/module-billing-subscriptions",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liberusoftware/module-billing-subscriptions.git",
+                "reference": "85b50159dd318394cc1f07edb5024491a8e297a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liberusoftware/module-billing-subscriptions/zipball/85b50159dd318394cc1f07edb5024491a8e297a8",
+                "reference": "85b50159dd318394cc1f07edb5024491a8e297a8",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^13.38.0",
+                "illuminate/events": "^13.38.0",
+                "illuminate/support": "^13.38.0",
+                "liberusoftware/module-manager": "^1.0",
+                "php": "^8.5"
+            },
+            "type": "liberu-module",
+            "extra": {
+                "liberu": {
+                    "name": "module-billing-subscriptions"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Liberu\\Billing\\Subscriptions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Provider-neutral subscription lifecycle for Liberu Billing.",
+            "support": {
+                "issues": "https://github.com/liberusoftware/module-billing-subscriptions/issues",
+                "source": "https://github.com/liberusoftware/module-billing-subscriptions/tree/v0.1.0"
+            },
+            "time": "2026-11-02T16:40:28+00:00"
         },
         {
             "name": "liberusoftware/module-manager",
@@ -6684,17 +7511,11 @@
         },
         {
             "name": "liberusoftware/module-manager-filament",
-            "version": "1.11.1",
+            "version": "1.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-module-manager-filament.git",
-                "reference": "f6bdb12c7ce76e2a00c03ed9456fb8d23d3041e8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-module-manager-filament/zipball/f6bdb12c7ce76e2a00c03ed9456fb8d23d3041e8",
-                "reference": "f6bdb12c7ce76e2a00c03ed9456fb8d23d3041e8",
-                "shasum": ""
+                "reference": "dd7c98c89bff0c6b4cf1d1e26fdcc7ef83fb8a4b"
             },
             "require": {
                 "filament/filament": "^5.11.0",
@@ -6717,16 +7538,21 @@
                     "Liberu\\Foundation\\ModuleManagerFilament\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\ModuleManagerFilament\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Filament page for enabling and disabling Liberu feature modules.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-module-manager-filament/issues",
-                "source": "https://github.com/liberusoftware/module-module-manager-filament/tree/v1.11.1"
-            },
-            "time": "2026-11-14T17:21:33+00:00"
+            "time": "2026-11-14T17:39:48+00:00"
         },
         {
             "name": "liberusoftware/notifications",
@@ -6823,17 +7649,11 @@
         },
         {
             "name": "liberusoftware/organizations-teams",
-            "version": "1.10.1",
+            "version": "1.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-organizations-teams.git",
-                "reference": "9d4b8c819ef6874ae8864403dcbb2545f4315efc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-organizations-teams/zipball/9d4b8c819ef6874ae8864403dcbb2545f4315efc",
-                "reference": "9d4b8c819ef6874ae8864403dcbb2545f4315efc",
-                "shasum": ""
+                "reference": "03c888fe56380e6e728c9fd7588955fbdaa21ab2"
             },
             "require": {
                 "laravel/jetstream": "^5.5.3",
@@ -6858,29 +7678,34 @@
                     "Liberu\\Foundation\\Organizations\\Database\\Factories\\": "database/factories/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\Organizations\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Organization, team, membership, invitation, ownership, and context foundation.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-organizations-teams/issues",
-                "source": "https://github.com/liberusoftware/module-organizations-teams/tree/v1.10.1"
-            },
-            "time": "2026-11-13T15:34:36+00:00"
+            "time": "2026-11-14T18:22:22+00:00"
         },
         {
             "name": "liberusoftware/organizations-teams-filament",
-            "version": "1.6.2",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-organizations-teams-filament.git",
-                "reference": "5ee621d06806b82c2dd7cd762ed92a8411de968a"
+                "reference": "de89f51ab032fecb5124ad6579f68c773a908800"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-organizations-teams-filament/zipball/5ee621d06806b82c2dd7cd762ed92a8411de968a",
-                "reference": "5ee621d06806b82c2dd7cd762ed92a8411de968a",
+                "url": "https://api.github.com/repos/liberusoftware/module-organizations-teams-filament/zipball/de89f51ab032fecb5124ad6579f68c773a908800",
+                "reference": "de89f51ab032fecb5124ad6579f68c773a908800",
                 "shasum": ""
             },
             "require": {
@@ -6910,9 +7735,9 @@
             "description": "Filament administration adapter for organizations and teams.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-organizations-teams-filament/issues",
-                "source": "https://github.com/liberusoftware/module-organizations-teams-filament/tree/v1.6.2"
+                "source": "https://github.com/liberusoftware/module-organizations-teams-filament/tree/v1.6.1"
             },
-            "time": "2026-11-14T14:25:57+00:00"
+            "time": "2026-11-02T16:50:09+00:00"
         },
         {
             "name": "liberusoftware/profiles",
@@ -6962,17 +7787,11 @@
         },
         {
             "name": "liberusoftware/roles-permissions",
-            "version": "1.7.0",
+            "version": "1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-roles-permissions.git",
-                "reference": "f1eb827d80c2d085f2752bca85a6f34fd5737300"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-roles-permissions/zipball/f1eb827d80c2d085f2752bca85a6f34fd5737300",
-                "reference": "f1eb827d80c2d085f2752bca85a6f34fd5737300",
-                "shasum": ""
+                "reference": "cb99e2f8ec075b52ed3cb61322b36c646163f330"
             },
             "require": {
                 "liberusoftware/module-manager": "^1.0",
@@ -6995,16 +7814,21 @@
                     "Liberu\\Foundation\\RolesPermissions\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\RolesPermissions\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Contextual roles, permissions, policies, and authorization safeguards.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-roles-permissions/issues",
-                "source": "https://github.com/liberusoftware/module-roles-permissions/tree/v1.7.0"
-            },
-            "time": "2026-11-05T21:46:35+00:00"
+            "time": "2026-11-14T15:34:31+00:00"
         },
         {
             "name": "liberusoftware/roles-permissions-filament",
@@ -7194,17 +8018,11 @@
         },
         {
             "name": "liberusoftware/sessions-devices",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-sessions-devices.git",
-                "reference": "50174438d8f823f16390ca06093f67967ccb5c1d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-sessions-devices/zipball/50174438d8f823f16390ca06093f67967ccb5c1d",
-                "reference": "50174438d8f823f16390ca06093f67967ccb5c1d",
-                "shasum": ""
+                "reference": "f76f707dc3b657ab1cca20d56fd33286bb97b7e5"
             },
             "require": {
                 "illuminate/database": "^13.38.0",
@@ -7227,16 +8045,21 @@
                     "Liberu\\Foundation\\Sessions\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\Sessions\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Privacy-conscious session inventory and revocation.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-sessions-devices/issues",
-                "source": "https://github.com/liberusoftware/module-sessions-devices/tree/v1.5.1"
-            },
-            "time": "2026-11-02T16:44:52+00:00"
+            "time": "2026-11-14T15:52:34+00:00"
         },
         {
             "name": "liberusoftware/sessions-devices-filament",
@@ -7285,17 +8108,11 @@
         },
         {
             "name": "liberusoftware/settings",
-            "version": "1.5.2",
+            "version": "1.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-settings.git",
-                "reference": "c5abc43443553338abd4c7601f9f9f8b14a0647c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-settings/zipball/c5abc43443553338abd4c7601f9f9f8b14a0647c",
-                "reference": "c5abc43443553338abd4c7601f9f9f8b14a0647c",
-                "shasum": ""
+                "reference": "b2fbb2a2efbb67746b4ea6986fc8064e71e3dac0"
             },
             "require": {
                 "liberusoftware/module-manager": "^1.0",
@@ -7317,16 +8134,21 @@
                     "Liberu\\Foundation\\Settings\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\Settings\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Typed scoped settings foundation for Liberu applications.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-settings/issues",
-                "source": "https://github.com/liberusoftware/module-settings/tree/v1.5.2"
-            },
-            "time": "2026-11-02T17:37:19+00:00"
+            "time": "2026-11-14T17:08:54+00:00"
         },
         {
             "name": "liberusoftware/settings-filament",
@@ -7611,17 +8433,11 @@
         },
         {
             "name": "liberusoftware/theme-support",
-            "version": "1.8.3",
+            "version": "1.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-theme-support.git",
-                "reference": "419b4ce4d021061f8a9cace05319f7881c7db3f1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-theme-support/zipball/419b4ce4d021061f8a9cace05319f7881c7db3f1",
-                "reference": "419b4ce4d021061f8a9cace05319f7881c7db3f1",
-                "shasum": ""
+                "reference": "29e742bfbd0460fdf479cd30a471603c11df5073"
             },
             "require": {
                 "liberusoftware/module-manager": "^1.0",
@@ -7641,23 +8457,31 @@
                 }
             },
             "autoload": {
-                "files": [
-                    "src/Support/theme_helpers.php"
-                ],
                 "psr-4": {
                     "Liberu\\Foundation\\Theme\\": "src/"
-                }
+                },
+                "files": [
+                    "src/Support/theme_helpers.php"
+                ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\Theme\\Tests\\": "tests/"
+                },
+                "files": [
+                    "tests/Helpers.php"
+                ]
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Theme discovery and host presentation support for Liberu applications.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-theme-support/issues",
-                "source": "https://github.com/liberusoftware/module-theme-support/tree/v1.8.3"
-            },
-            "time": "2026-11-14T17:02:26+00:00"
+            "time": "2026-11-14T19:07:54+00:00"
         },
         {
             "name": "liberusoftware/theme-support-livewire",
@@ -7666,12 +8490,6 @@
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-theme-support-livewire.git",
                 "reference": "15ddc6d1bc121159ae721a0f72fa8bde9be5818c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-theme-support-livewire/zipball/15ddc6d1bc121159ae721a0f72fa8bde9be5818c",
-                "reference": "15ddc6d1bc121159ae721a0f72fa8bde9be5818c",
-                "shasum": ""
             },
             "require": {
                 "liberusoftware/theme-support": "^1.0",
@@ -7695,30 +8513,29 @@
                     "Liberu\\Foundation\\ThemeSupportLivewire\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\ThemeSupportLivewire\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "Livewire theme-switching presentation adapter for Liberu Theme Support.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-theme-support-livewire/issues",
-                "source": "https://github.com/liberusoftware/module-theme-support-livewire/tree/v1.6.2"
-            },
             "time": "2026-11-14T14:23:31+00:00"
         },
         {
             "name": "liberusoftware/two-factor-authentication",
-            "version": "1.4.6",
+            "version": "1.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-two-factor-authentication.git",
-                "reference": "3ca80cbc17980d9749faf765c0db847ba43c4d29"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-two-factor-authentication/zipball/3ca80cbc17980d9749faf765c0db847ba43c4d29",
-                "reference": "3ca80cbc17980d9749faf765c0db847ba43c4d29",
-                "shasum": ""
+                "reference": "bbba0489fb698d12d24e68156e677767379348dc"
             },
             "require": {
                 "illuminate/contracts": "^13.38.0",
@@ -7741,16 +8558,21 @@
                     "Liberu\\Foundation\\TwoFactor\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Liberu\\Foundation\\TwoFactor\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "pest"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "TOTP enforcement policy and one-time recovery-code primitives.",
-            "support": {
-                "issues": "https://github.com/liberusoftware/module-two-factor-authentication/issues",
-                "source": "https://github.com/liberusoftware/module-two-factor-authentication/tree/v1.4.6"
-            },
-            "time": "2026-11-02T16:45:30+00:00"
+            "time": "2026-11-14T15:58:35+00:00"
         },
         {
             "name": "liberusoftware/users-roles",
@@ -7926,6 +8748,74 @@
                 }
             ],
             "time": "2026-10-21T12:53:46+00:00"
+        },
+        {
+            "name": "masterminds/html5",
+            "version": "2.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Masterminds/html5-php.git",
+                "reference": "15e16663bd6f512352209d0e3a789c0a691c0d9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/15e16663bd6f512352209d0e3a789c0a691c0d9b",
+                "reference": "15e16663bd6f512352209d0e3a789c0a691c0d9b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-mbstring": "*",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6 || ^7 || ^8 || ^9 || ^10"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Masterminds\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Butcher",
+                    "email": "technosophos@gmail.com"
+                },
+                {
+                    "name": "Matt Farina",
+                    "email": "matt@mattfarina.com"
+                },
+                {
+                    "name": "Asmir Mustafic",
+                    "email": "goetas@gmail.com"
+                }
+            ],
+            "description": "An HTML5 parser and serializer.",
+            "homepage": "http://masterminds.github.io/html5-php",
+            "keywords": [
+                "HTML5",
+                "dom",
+                "html",
+                "parser",
+                "querypath",
+                "serializer",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/Masterminds/html5-php/issues",
+                "source": "https://github.com/Masterminds/html5-php/tree/2.12.0"
+            },
+            "time": "2026-10-25T08:57:58+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -11144,6 +12034,84 @@
                 }
             ],
             "time": "2026-03-19T10:36:26+00:00"
+        },
+        {
+            "name": "sabberworm/php-css-parser",
+            "version": "v9.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MyIntervals/PHP-CSS-Parser.git",
+                "reference": "f284e63b6e891e0c28631e54ba06c3ed102a9ef3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MyIntervals/PHP-CSS-Parser/zipball/f284e63b6e891e0c28631e54ba06c3ed102a9ef3",
+                "reference": "f284e63b6e891e0c28631e54ba06c3ed102a9ef3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-iconv": "*",
+                "php": "^7.2.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0"
+            },
+            "require-dev": {
+                "php-parallel-lint/php-parallel-lint": "1.4.0",
+                "phpstan/extension-installer": "1.4.3",
+                "phpstan/phpstan": "1.12.33 || 2.2.9",
+                "phpstan/phpstan-phpunit": "1.4.2 || 2.0.18",
+                "phpstan/phpstan-strict-rules": "1.6.2 || 2.0.12",
+                "phpunit/phpunit": "8.5.54",
+                "rawr/phpunit-data-provider": "3.3.1",
+                "rector/rector": "1.2.10 || 2.6.2",
+                "rector/type-perfect": "1.0.0 || 2.1.4",
+                "squizlabs/php_codesniffer": "4.0.4"
+            },
+            "suggest": {
+                "ext-mbstring": "for parsing UTF-8 CSS"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "9.6.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Rule/Rule.php",
+                    "src/RuleSet/RuleContainer.php"
+                ],
+                "psr-4": {
+                    "Sabberworm\\CSS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raphael Schweikert"
+                },
+                {
+                    "name": "Oliver Klee",
+                    "email": "github@oliverklee.de"
+                },
+                {
+                    "name": "Jake Hotson",
+                    "email": "jake.github@qzdesign.co.uk"
+                }
+            ],
+            "description": "Parser for CSS Files written in PHP",
+            "homepage": "https://www.sabberworm.com/blog/2010/6/10/php-css-parser",
+            "keywords": [
+                "css",
+                "parser",
+                "stylesheet"
+            ],
+            "support": {
+                "issues": "https://github.com/MyIntervals/PHP-CSS-Parser/issues",
+                "source": "https://github.com/MyIntervals/PHP-CSS-Parser/tree/v9.5.0"
+            },
+            "time": "2026-09-20T15:02:00+00:00"
         },
         {
             "name": "scrivo/highlight.php",

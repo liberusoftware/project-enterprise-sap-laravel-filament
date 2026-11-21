@@ -40,6 +40,8 @@ Modules own cohesive capabilities and expose stable contracts, actions, events, 
 
 Composer and `composer.lock` are the source of installation and version truth. The tracked `modules/` and `themes/` directories make the exact deployed package contents visible in code review; do not patch an installed package only in this host repository.
 
+See the [Enterprise SAP conformance and migration plan](docs/ENTERPRISE-CONFORMANCE.md) for domain ownership and integration order.
+
 ## Technology baseline
 
 | Concern | Version or choice |
@@ -70,6 +72,10 @@ php artisan serve
 ```
 
 Review `.env` before running migrations. Use `php artisan migrate --seed` when example data is required. For containerised or Kubernetes-oriented environments, see [`install.sh`](install.sh), [`docker-compose.yml`](docker-compose.yml), and [`k8s/`](k8s/).
+
+Set `SEED_ADMIN_PASSWORD` to choose the password for the seeded `admin@example.com` account. Rerunning the seeder applies a changed password when this value is set. Leaving it empty preserves the existing account password.
+
+An admin who owns the active company team can open **Enterprise SAP setup** in the admin panel. Enter the legal name and select the base currency, default locale, and time zone to create the company’s billing account and primary accounting book. Use **Edit regional defaults** on the same page to update the locale or time zone. Team members can check setup status and see the defaults in **Company workspace** in the app panel.
 
 ## Capability areas
 

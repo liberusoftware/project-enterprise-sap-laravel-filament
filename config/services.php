@@ -28,6 +28,28 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'cms' => [
+        'url' => env('CMS_URL'),
+        'token' => env('CMS_SITE_TOKEN'),
+        'team_id' => env('CMS_SITE_TEAM_ID'),
+        'site_id' => env('CMS_SITE_ID'),
+        'site_key' => env('CMS_SITE_KEY'),
+    ],
+
+    'crm' => [
+        'url' => env('CRM_URL'),
+        'token' => env('CRM_DEAL_TOKEN'),
+        'team_id' => env('CRM_DEAL_TEAM_ID'),
+        'remote_team_id' => env('CRM_REMOTE_TEAM_ID'),
+    ],
+
+    'ecommerce' => [
+        'url' => env('ECOMMERCE_URL'),
+        'token' => env('ECOMMERCE_ORDER_TOKEN'),
+        'team_id' => env('ECOMMERCE_ORDER_TEAM_ID'),
+        'store_id' => env('ECOMMERCE_STORE_ID'),
+    ],
+
     'slack' => [
         'notifications' => [
             'bot_user_oauth_token' => env('SLACK_BOT_USER_OAUTH_TOKEN'),

@@ -1,13 +1,12 @@
 {
   "name": "liberusoftware/module-manager-filament",
-  "description": "Filament operations presentation adapter for the Liberu Module Manager.",
+  "description": "Filament page for enabling and disabling Liberu feature modules.",
   "type": "liberu-module",
   "license": "MIT",
   "require": {
     "php": "^8.5",
     "filament/filament": "^5.11.0",
-    "liberusoftware/module-manager": "^1.0",
-    "liberusoftware/observability": "^1.0"
+    "liberusoftware/module-manager": "^1.9"
   },
   "autoload": {
     "psr-4": {
@@ -19,7 +18,7 @@
       "name": "module-manager-filament"
     }
   },
-  "version": "1.4.1",
+  "version": "1.11.2",
   "autoload-dev": {
     "psr-4": {
       "Liberu\\Foundation\\ModuleManagerFilament\\Tests\\": "tests/"
@@ -27,6 +26,7 @@
   },
   "require-dev": {
     "liberusoftware/package-testbench": "^1.5",
+    "livewire/livewire": "^4.0",
     "pestphp/pest": "^5.3.3"
   },
   "scripts": {

@@ -15,13 +15,69 @@
             <directory>tests/Architecture</directory>
         </testsuite>
     </testsuites>
-    <!-- The host measures the host. Each package runs and measures itself, against its
-         own phpunit.xml and its own coverage threshold — a package's numbers are not
-         the composition's to report. -->
     <source>
         <include>
             <directory>app</directory>
+            <directory>modules/*/src</directory>
         </include>
+        <exclude>
+            <!-- Reused packages measure source coverage in their owning projects.
+                 New Enterprise-owned modules are included by default. -->
+            <directory>modules/accounting-accounts-receivable/src</directory>
+            <directory>modules/accounting-chart-of-accounts/src</directory>
+            <directory>modules/accounting-core/src</directory>
+            <directory>modules/accounting-financial-master-data/src</directory>
+            <directory>modules/accounting-general-ledger/src</directory>
+            <directory>modules/accounting-periods/src</directory>
+            <directory>modules/accounting-sales-invoicing/src</directory>
+            <directory>modules/activity-comments/src</directory>
+            <directory>modules/analytics-core/src</directory>
+            <directory>modules/analytics-google/src</directory>
+            <directory>modules/analytics-meta/src</directory>
+            <directory>modules/api-access/src</directory>
+            <directory>modules/application/src</directory>
+            <directory>modules/audit/src</directory>
+            <directory>modules/currency-context/src</directory>
+            <directory>modules/developer-experience/src</directory>
+            <directory>modules/feature-flags/src</directory>
+            <directory>modules/files-media/src</directory>
+            <directory>modules/identity-core-filament/src</directory>
+            <directory>modules/identity-core/src</directory>
+            <directory>modules/identity-socialstream/src</directory>
+            <directory>modules/import-export/src</directory>
+            <directory>modules/integrations/src</directory>
+            <directory>modules/jetstream-bridge/src</directory>
+            <directory>modules/localization-core-livewire/src</directory>
+            <directory>modules/localization-core/src</directory>
+            <directory>modules/localization-mymemory/src</directory>
+            <directory>modules/module-billing-billing-core/src</directory>
+            <directory>modules/module-billing-invoicing/src</directory>
+            <directory>modules/module-billing-orders/src</directory>
+            <directory>modules/module-billing-payments/src</directory>
+            <directory>modules/module-billing-subscriptions/src</directory>
+            <directory>modules/module-manager-filament/src</directory>
+            <directory>modules/module-manager/src</directory>
+            <directory>modules/notifications/src</directory>
+            <directory>modules/observability/src</directory>
+            <directory>modules/organizations-teams-filament/src</directory>
+            <directory>modules/organizations-teams/src</directory>
+            <directory>modules/profiles/src</directory>
+            <directory>modules/roles-permissions-filament/src</directory>
+            <directory>modules/roles-permissions/src</directory>
+            <directory>modules/scheduler-queues/src</directory>
+            <directory>modules/search-api/src</directory>
+            <directory>modules/search/src</directory>
+            <directory>modules/sessions-devices-filament/src</directory>
+            <directory>modules/sessions-devices/src</directory>
+            <directory>modules/settings-filament/src</directory>
+            <directory>modules/settings/src</directory>
+            <directory>modules/tenancy/src</directory>
+            <directory>modules/theme-support-livewire/src</directory>
+            <directory>modules/theme-support/src</directory>
+            <directory>modules/two-factor-authentication/src</directory>
+            <directory>modules/users-roles/src</directory>
+            <directory>modules/webhooks/src</directory>
+        </exclude>
     </source>
     <php>
         <env name="APP_ENV" value="testing"/>
