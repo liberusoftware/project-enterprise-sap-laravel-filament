@@ -66,7 +66,7 @@ class RuntimeContractsTest extends TestCase
         $this->previousDispatcher = Model::getEventDispatcher();
         $this->previousTeamModel = Jetstream::teamModel();
         $this->app = new Application(sys_get_temp_dir());
-        $this->app->instance('config', new Repository());
+        $this->app->instance('config', new Repository);
         Facade::clearResolvedInstances();
         Facade::setFacadeApplication($this->app);
         (new TenancyServiceProvider($this->app))->register();
@@ -142,18 +142,18 @@ class RuntimeContractsTest extends TestCase
         $this->panel->method('getTenant')->willThrowException(new RuntimeException('No panel'));
         $this->assertNull(TenantContext::currentId());
         $this->assertNull(TenantContext::forUser(new GenericUser(['id' => 1])));
-        $actor = new RuntimeActor();
+        $actor = new RuntimeActor;
         $actor->setRelation('currentTeam', null);
         $this->assertNull(TenantContext::forUser($actor));
     }
 
     public function test_request_context_is_visible_only_until_termination(): void
     {
-        $this->actor = new RuntimeActor();
+        $this->actor = new RuntimeActor;
         $team = RuntimeTeam::create();
         $this->actor->setRelation('currentTeam', $team);
         $request = Request::create('/team');
-        $middleware = new SetTenantContext();
+        $middleware = new SetTenantContext;
         $expected = new Response('handled', 202);
         $response = $middleware->handle($request, function (Request $incoming) use ($request, $team, $expected): Response {
             $this->assertSame($request, $incoming);
@@ -168,10 +168,10 @@ class RuntimeContractsTest extends TestCase
 
     public function test_permission_context_supports_both_guard_and_request_actors_and_cleans_up(): void
     {
-        $actor = new RuntimeActor();
+        $actor = new RuntimeActor;
         $team = RuntimeTeam::create();
         $actor->setRelation('currentTeam', $team);
-        $middleware = new SetPermissionsTeamContext();
+        $middleware = new SetPermissionsTeamContext;
         foreach ([false, true] as $useGuard) {
             $this->actor = $useGuard ? $actor : null;
             $request = Request::create('/permissions');
@@ -196,7 +196,7 @@ class RuntimeContractsTest extends TestCase
     public function test_tenant_aware_jobs_capture_context_and_unscoped_jobs_do_not_inherit_it(): void
     {
         TenantContext::set(42);
-        $job = new class()
+        $job = new class
         {
             use TenantAware;
 
@@ -211,18 +211,18 @@ class RuntimeContractsTest extends TestCase
         $this->assertSame(42, $job->middleware()[0]->handle($job, fn () => TenantContext::currentId()));
         $this->assertNull(TenantContext::currentId());
         TenantContext::set(99);
-        $this->assertNull(new RestoreTenantContext()->handle(new stdClass(), fn () => TenantContext::currentId()));
+        $this->assertNull(new RestoreTenantContext()->handle(new stdClass, fn () => TenantContext::currentId()));
         $this->assertNull(TenantContext::currentId());
     }
 
     public function test_only_tenant_events_change_the_permission_team(): void
     {
-        $listener = new SwitchTeam();
+        $listener = new SwitchTeam;
         $this->permissionTeam = 99;
-        $listener->handle(new stdClass());
+        $listener->handle(new stdClass);
         $this->assertSame(99, getPermissionsTeamId());
         $team = RuntimeTeam::create();
-        $listener->handle(new TenantSet($team, new RuntimeActor()));
+        $listener->handle(new TenantSet($team, new RuntimeActor));
         $this->assertSame($team->id, getPermissionsTeamId());
     }
 
