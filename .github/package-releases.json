@@ -1,11 +1,395 @@
 {
+  "liberusoftware/activity-comments": {
+    "path": "modules/activity-comments",
+    "reference": "55c2809752f8d06b50b11eb705e4531f197cec47",
+    "repository": "https://github.com/liberusoftware/module-activity-comments",
+    "source_signature": "c828b1c68c9dccb3f0002333946336a4fc91e790a380fa70f50304ef037e20fa",
+    "source_tree": "9c0e807f82bd5f3976d517ca73755b0ee495a960",
+    "version": "1.4.15"
+  },
+  "liberusoftware/analytics-core": {
+    "path": "modules/analytics-core",
+    "reference": "3e40afe8e69d0e876fcefa57fbe17e58e7745d77",
+    "repository": "https://github.com/liberusoftware/module-analytics-core",
+    "source_signature": "20206754ae36ac09ab2060476fe4b7a4d5c583532e9279ef3989c869e1246f0a",
+    "source_tree": "f97c465a6515de6e5f631f0482186ba07cf79e8a",
+    "version": "1.9.3"
+  },
+  "liberusoftware/analytics-google": {
+    "path": "modules/analytics-google",
+    "reference": "aca9d05df3136a0236fb028b937c819c9be27361",
+    "repository": "https://github.com/liberusoftware/module-analytics-google",
+    "source_signature": "5608a1e2c91be2e9c163f6fb2086db4fa8999aa305a369d20e2109b533d08022",
+    "source_tree": "1ce902f75ef401afcb9e9dcead35aab8431c94c6",
+    "version": "1.5.10"
+  },
+  "liberusoftware/analytics-meta": {
+    "path": "modules/analytics-meta",
+    "reference": "d36ddcf63fc84f6cc5ce99a4ea97321b710c363a",
+    "repository": "https://github.com/liberusoftware/module-analytics-meta",
+    "source_signature": "a9c339e198cce4205117c6a0bed37664c2a64109d7ba844fd44a1fc3d14242db",
+    "source_tree": "69bc73da99e6e6e536134df017fac5d70f3f0c8d",
+    "version": "1.4.13"
+  },
+  "liberusoftware/api-access": {
+    "path": "modules/api-access",
+    "reference": "1b4aa51530707c4dd5109eb7018c37e3825cfe7b",
+    "repository": "https://github.com/liberusoftware/module-api-access",
+    "source_signature": "f6f7953b35582c8bf95214eb6b423d3e4e00c24927723f9810bd0888653ae147",
+    "source_tree": "cd1a77a9835260a81b5704eeb82fa1a87c9130f2",
+    "version": "1.6.4"
+  },
+  "liberusoftware/application": {
+    "path": "modules/application",
+    "reference": "f5f1cd21fa492950104e37e510d43086974f53fc",
+    "repository": "https://github.com/liberusoftware/module-application",
+    "source_signature": "edaf383924606e4b68df5f1b3daf10d4b3ebdf29c1dd6c639fd368f4d84682ca",
+    "source_tree": "d88e8e9b4ba61b7219d1f2e280815467aafe2d0f",
+    "version": "2.0.4"
+  },
+  "liberusoftware/audit": {
+    "path": "modules/audit",
+    "reference": "a2a10e80311af78bf697ee6c710ec6580b07f778",
+    "repository": "https://github.com/liberusoftware/module-audit",
+    "source_signature": "9bc2bff49be38aa4a4be36212703307bc6ead2dfe13b68e6fe8d38f9806e9b97",
+    "source_tree": "893b170accfedd928cd014b3544f60acb7ea5877",
+    "version": "1.10.0"
+  },
+  "liberusoftware/currency-context": {
+    "path": "modules/currency-context",
+    "reference": "4035af54ec399b242b90996f160dd4153afbedae",
+    "repository": "https://github.com/liberusoftware/module-currency-context",
+    "source_signature": "a7e3b9ddaf9c98395ed339792bcee9aaf5223d88ab2e9ad1c2cdfcb9efbb1cb2",
+    "source_tree": "49452f000fb0bef0225fd1de3ab69bf77a81a21e",
+    "version": "1.6.3"
+  },
+  "liberusoftware/developer-experience": {
+    "path": "modules/developer-experience",
+    "reference": "04874191560760712a1d93dc6b9bd45442691d3a",
+    "repository": "https://github.com/liberusoftware/module-developer-experience",
+    "source_signature": "6a41f99af6c48b5aebb1c8c357026856d48cd658618a5e110bac897f83a974b6",
+    "source_tree": "8380579e03bbbf92c566dd241fc81990fd40d086",
+    "version": "1.4.14"
+  },
+  "liberusoftware/feature-flags": {
+    "path": "modules/feature-flags",
+    "reference": "716c2d80bd3e316f09c89b3f84c356dafcb7a3e6",
+    "repository": "https://github.com/liberusoftware/module-feature-flags",
+    "source_signature": "4772d99405b9a787af0a6510fc8775936e5f053fa6bc9535b7a2a807e0c28bf4",
+    "source_tree": "a6b625c5f7f9879006bde1fd970d53c1f8d21b76",
+    "version": "1.4.14"
+  },
+  "liberusoftware/files-media": {
+    "path": "modules/files-media",
+    "reference": "361830e0f03ca6d1cc0ed8c0ac5430103c75c6d5",
+    "repository": "https://github.com/liberusoftware/module-files-media",
+    "source_signature": "08c2e981d85add2306ebbad119a59134815a1505839dd880c170b3f05f4f8127",
+    "source_tree": "045634616cd0c5487a35be9281661d6e4404d004",
+    "version": "1.5.10"
+  },
+  "liberusoftware/identity-core": {
+    "path": "modules/identity-core",
+    "reference": "264d65ad387161760e13884dedd55e89d8423c0f",
+    "repository": "https://github.com/liberusoftware/module-identity-core",
+    "source_signature": "74e0dca2a57dbec311a3efcd01d0f4c9edae993c3b423618b89b0fab69ca7ba7",
+    "source_tree": "db57f1d60158ad8193eb34d254614ec025f49641",
+    "version": "1.7.2"
+  },
+  "liberusoftware/identity-core-filament": {
+    "path": "modules/identity-core-filament",
+    "reference": "574101add2547d51a138203071064201a6f72fa8",
+    "repository": "https://github.com/liberusoftware/module-identity-core-filament",
+    "source_signature": "01f330d50685f5552068cb90407c041f73db09e5d329736bcc40ae59391142b5",
+    "source_tree": "eda47e292af2bce9d9f67201d49b556c6b80ab4e",
+    "version": "1.7.3"
+  },
+  "liberusoftware/identity-socialstream": {
+    "path": "modules/identity-socialstream",
+    "reference": "6f1562d9e9dfbc0246446b11b6b5c7f5ef0d6c1d",
+    "repository": "https://github.com/liberusoftware/module-identity-socialstream",
+    "source_signature": "8b828a435b9a61eddaf7f45b267c3af7bb5c005b4463376dc5a9e5b8d87bc65d",
+    "source_tree": "0b0a50b92e2b92ef37be3aed1c6a828d8ea9c438",
+    "version": "1.8.2"
+  },
+  "liberusoftware/import-export": {
+    "path": "modules/import-export",
+    "reference": "4117a576703a2960b8b75db40661945d1ef702e0",
+    "repository": "https://github.com/liberusoftware/module-import-export",
+    "source_signature": "1f558c54aab4370af74525bf766411415443fbb8fa5bbe8017375e81e07d1658",
+    "source_tree": "9a17a92e87a8d2802e1574c43b9692eadaf0c995",
+    "version": "1.5.3"
+  },
+  "liberusoftware/integrations": {
+    "path": "modules/integrations",
+    "reference": "3cd2a3d187962f9855b3db010d9b2f7e2ff99658",
+    "repository": "https://github.com/liberusoftware/module-integrations",
+    "source_signature": "9ee245175462af5d194c023a5ec69db42a9831499c75e5865f179ab3cef94f62",
+    "source_tree": "5c5acc57c55a4bcc556260ff8d72d08085ace80a",
+    "version": "1.9.1"
+  },
+  "liberusoftware/jetstream-bridge": {
+    "path": "modules/jetstream-bridge",
+    "reference": "09da8fb9fe08dfb240854b5663611295079ff903",
+    "repository": "https://github.com/liberusoftware/module-jetstream-bridge",
+    "source_signature": "f5c6fac1c5a36f432238f01ea65650da3617d29b2e82fede9f815e6ee3304b30",
+    "source_tree": "abdb667e2869c2b8abf35acdd9772edc254806f9",
+    "version": "1.4.13"
+  },
+  "liberusoftware/localization-core": {
+    "path": "modules/localization-core",
+    "reference": "58ad01d917179b5b06e0a45e49314fb006738a16",
+    "repository": "https://github.com/liberusoftware/module-localization-core",
+    "source_signature": "91f2d463299740d941487d5e1cc6bb91ff0981ba91df60e53d22c4bae7629fa0",
+    "source_tree": "4678ec90c509666e27685b0571638cea5531d7f5",
+    "version": "1.5.1"
+  },
+  "liberusoftware/localization-core-livewire": {
+    "path": "modules/localization-core-livewire",
+    "reference": "668492e9808d8011e114729590286d981b644c1f",
+    "repository": "https://github.com/liberusoftware/module-localization-core-livewire",
+    "source_signature": "0aa07ba096b29e9b57533f99d81804c6587c2ba242de8fd9b9dd2ab1139aa63f",
+    "source_tree": "6fdc35f6d6934e6390db71cd774a76b7bd5a07ee",
+    "version": "1.5.5"
+  },
+  "liberusoftware/localization-mymemory": {
+    "path": "modules/localization-mymemory",
+    "reference": "1c453269cd2439f792b6d2e64238d91ffe91ce1a",
+    "repository": "https://github.com/liberusoftware/module-localization-mymemory",
+    "source_signature": "93e9048d4132fa038d53a0240418243dd9dbbaaf788ed1851db97744cf16b22f",
+    "source_tree": "9656bb32a00c2164b2b57b7d6fc9b9c3dc41a0e0",
+    "version": "1.5.1"
+  },
+  "liberusoftware/module-accounting-accounts-receivable": {
+    "path": "modules/accounting-accounts-receivable",
+    "reference": "1be9602ebdef401c6b6f38e4bb3109a7cd6e4256",
+    "repository": "https://github.com/liberusoftware/module-accounting-accounts-receivable",
+    "source_signature": "37d1e8ba87d02f912ea309bd5fcb38b79d571f19bc8ce79d113df50610db6ea5",
+    "source_tree": "60502078dba12ebec7e2e507d060cffa9294f6e6",
+    "version": "1.0.0"
+  },
+  "liberusoftware/module-accounting-chart-of-accounts": {
+    "path": "modules/accounting-chart-of-accounts",
+    "reference": "5d180ef96e39f05e0ed31d790f57e98f6a7b2cd8",
+    "repository": "https://github.com/liberusoftware/module-accounting-chart-of-accounts",
+    "source_signature": "7d139520636cf4db1deb41211d9cadbd0c64f45e885d7b19923b393f3a241f5e",
+    "source_tree": "982a9d0462df44d864cb92fd91078812c8c09cb9",
+    "version": "1.0.0"
+  },
+  "liberusoftware/module-accounting-core": {
+    "path": "modules/accounting-core",
+    "reference": "7ea5e8e483445eba7f0d55a2c2408bfbc995c108",
+    "repository": "https://github.com/liberusoftware/module-accounting-core",
+    "source_signature": "e8d9c9db0f0d82db79cbd489d3a7b5770b6cf46401bd61e8bedde3ec9a9305a2",
+    "source_tree": "85132764d92e1073137b5c839a899b2d4a7a890d",
+    "version": "1.1.0"
+  },
+  "liberusoftware/module-accounting-financial-master-data": {
+    "path": "modules/accounting-financial-master-data",
+    "reference": "1b2c3eb57f77be5478e081342e9fd01797e15777",
+    "repository": "https://github.com/liberusoftware/module-accounting-financial-master-data",
+    "source_signature": "0e3709bcf6deea367e3c0152093aabd359714f34aff90cd73d25f18cf5adcb16",
+    "source_tree": "b9264cf4ad9b52600c8df31401d453c5a44b2147",
+    "version": "1.0.0"
+  },
+  "liberusoftware/module-accounting-general-ledger": {
+    "path": "modules/accounting-general-ledger",
+    "reference": "9fcb4b2abd6d1eee6b5d66892e052fef3ee81e6d",
+    "repository": "https://github.com/liberusoftware/module-accounting-general-ledger",
+    "source_signature": "f685562be8f98638ebb8016d2c0cefcd49a8df8cdb416ae1d0d3133eb1bcddd3",
+    "source_tree": "80c74f7570926e38e812f20329c26677fafe3324",
+    "version": "1.0.1"
+  },
+  "liberusoftware/module-accounting-periods": {
+    "path": "modules/accounting-periods",
+    "reference": "937661a849dcfd02f13181613bc90a08c75aef50",
+    "repository": "https://github.com/liberusoftware/module-accounting-periods",
+    "source_signature": "20d8d79d4932c0248491a4ed8bfba2083b89793267b33eaaf1e9df127668bf4a",
+    "source_tree": "7e1e4a6ab5f047c318c321788d5070873cc48f2b",
+    "version": "1.0.0"
+  },
+  "liberusoftware/module-accounting-sales-invoicing": {
+    "path": "modules/accounting-sales-invoicing",
+    "reference": "91952ac83dcfc44c1a5a967b33c91f9810daa973",
+    "repository": "https://github.com/liberusoftware/module-accounting-sales-invoicing",
+    "source_signature": "05edf3f51108a5c474cfd2a594bedcf3298f5505fd07de1b026eb1237b214151",
+    "source_tree": "79631e4002ae512d3aeeaffaafa60001b72e0bfb",
+    "version": "1.0.0"
+  },
+  "liberusoftware/module-billing-billing-core": {
+    "path": "modules/module-billing-billing-core",
+    "reference": "711b154b367a0cc8225710557d1e917cc529fe5f",
+    "repository": "https://github.com/liberusoftware/module-module-billing-billing-core",
+    "source_signature": "5d9ff24a08a4dab15fc9af37b9549879112d97fe64656e3ebb0eadded35343cd",
+    "source_tree": "533f4b4918991be0d44221eaf8943cfe6a5f3932",
+    "version": "0.1.3"
+  },
+  "liberusoftware/module-billing-invoicing": {
+    "path": "modules/module-billing-invoicing",
+    "reference": "7a5cb1fff8f11cd35a293c7f063c2d58f5d3b5fb",
+    "repository": "https://github.com/liberusoftware/module-module-billing-invoicing",
+    "source_signature": "a476d3500742385d4c93f1c969bbdf5b15545629a32858d83bc4f870f450ced4",
+    "source_tree": "d5dba7faebf9a49c28a3c6dfc407898357d85ed4",
+    "version": "0.1.0"
+  },
+  "liberusoftware/module-billing-orders": {
+    "path": "modules/module-billing-orders",
+    "reference": "a069f4232cd65b264fd8f313f47af2f6a659131e",
+    "repository": "https://github.com/liberusoftware/module-module-billing-orders",
+    "source_signature": "ed495cf234515dcbc8e37ba803821bf9821fb782211ea61d8cceb499abf79f69",
+    "source_tree": "643abb54933f57b3fd2dbbf31619452b560bca4a",
+    "version": "0.1.0"
+  },
+  "liberusoftware/module-billing-payments": {
+    "path": "modules/module-billing-payments",
+    "reference": "2fc2bcdde83a8c5fc25120c7966310c7385988e7",
+    "repository": "https://github.com/liberusoftware/module-billing-payments",
+    "source_signature": "4f00f04c26cd19c4b1baae4ecd53975b12077faf29c8306a3d2a7bec2ebd1062",
+    "source_tree": "074e1a12082e8eb17d4aff1dd34d74759df9aa94",
+    "version": "0.1.0"
+  },
+  "liberusoftware/module-billing-subscriptions": {
+    "path": "modules/module-billing-subscriptions",
+    "reference": "85b50159dd318394cc1f07edb5024491a8e297a8",
+    "repository": "https://github.com/liberusoftware/module-billing-subscriptions",
+    "source_signature": "f4833f11c065811ef081c3f34c5b1c55f69069fff1e29af90d58f98d71b9e344",
+    "source_tree": "0d356333754fef75c3deb7206629f88e74b05dc3",
+    "version": "0.1.0"
+  },
+  "liberusoftware/module-manager": {
+    "path": "modules/module-manager",
+    "reference": "c69eebdbce56bbaf54be6926a6ae623b065eeb2b",
+    "repository": "https://github.com/liberusoftware/module-module-manager",
+    "source_signature": "0ef2cc230d446d2f77fc890afb3005132dbb77653e5dfa387ebfb0025315b655",
+    "source_tree": "9a499191876ac22398084bd5832ef19b2f1cd848",
+    "version": "1.10.1"
+  },
+  "liberusoftware/module-manager-filament": {
+    "path": "modules/module-manager-filament",
+    "reference": "6f98f21c6a99ab7e512b8606975df4b01a975de2",
+    "repository": "https://github.com/liberusoftware/module-module-manager-filament",
+    "source_signature": "56a52351c52a33ee7f12e122269b5c4b8437391e2174bb1266d1777b1a2246fc",
+    "source_tree": "7d4bcea5242e1c82bfa87ac833a7753f202857ef",
+    "version": "1.12.1"
+  },
+  "liberusoftware/notifications": {
+    "path": "modules/notifications",
+    "reference": "b187fa63ac3f31d4ddc2aa6f1105e39d01e76f7d",
+    "repository": "https://github.com/liberusoftware/module-notifications",
+    "source_signature": "26d30f6bf7796d81f1a460eb1500deb4422128305982c2ae3f8e00de1020bc51",
+    "source_tree": "7004194dddc6ddbff02c4ee28b346d57a78b0407",
+    "version": "1.5.1"
+  },
+  "liberusoftware/observability": {
+    "path": "modules/observability",
+    "reference": "53ec201689cac6a3eea9a741ab28ce0292b7612b",
+    "repository": "https://github.com/liberusoftware/module-observability",
+    "source_signature": "4a1b7c6d947fbc855d7017e345f581d40103ae6be11b8cc6cf5dca1c229fd80a",
+    "source_tree": "4a04658725b2f80c78b9aa629fdd666b5214c8f5",
+    "version": "1.4.8"
+  },
+  "liberusoftware/organizations-teams": {
+    "path": "modules/organizations-teams",
+    "reference": "3f06918f47cbafa05ded50938cc4a1b256e37c7d",
+    "repository": "https://github.com/liberusoftware/module-organizations-teams",
+    "source_signature": "f771047e0417a4b7901e9b8e4e447bd11574bfdcb15a34dbee59386040cfdb43",
+    "source_tree": "89ff75b850da80b1f1de443c45b72307e2226935",
+    "version": "1.11.1"
+  },
+  "liberusoftware/organizations-teams-filament": {
+    "path": "modules/organizations-teams-filament",
+    "reference": "340d9d1a4235fa0f696357c094032427cf86a172",
+    "repository": "https://github.com/liberusoftware/module-organizations-teams-filament",
+    "source_signature": "d68c3d3f9add96f5cc77f3717634da1df5eee8b37ad7a43bec51f804c420159f",
+    "source_tree": "8fa6640af64c125a87b76108fd85a8ebfb52be07",
+    "version": "1.6.3"
+  },
+  "liberusoftware/profiles": {
+    "path": "modules/profiles",
+    "reference": "eb45653c4653c82f6fbf0c95075013937385f959",
+    "repository": "https://github.com/liberusoftware/module-profiles",
+    "source_signature": "c0bcf1f42c0d00ff580f43cf0775554a836da7b14f8ce57be3eeba871f1242ad",
+    "source_tree": "e8e3c1366e9956b000dc0b2d19ac4c8ae52e4b56",
+    "version": "1.6.2"
+  },
+  "liberusoftware/roles-permissions": {
+    "path": "modules/roles-permissions",
+    "reference": "43ca6818a6441b4ba540101700a2b70a35e7466c",
+    "repository": "https://github.com/liberusoftware/module-roles-permissions",
+    "source_signature": "f5b1ab209c792e95daaf7f34ca1fb16f51cd0d83aab0524527ea9489e550da27",
+    "source_tree": "ebcc57f15aea9a6937d2844a32917f5a0d2be47c",
+    "version": "1.8.1"
+  },
+  "liberusoftware/roles-permissions-filament": {
+    "path": "modules/roles-permissions-filament",
+    "reference": "8eb249655e27f285ff169c9655b9f961ce5b45f8",
+    "repository": "https://github.com/liberusoftware/module-roles-permissions-filament",
+    "source_signature": "0c0ce0c7069ffb3edac28d8c8736c39a7e1f734122a5cc44c2d3bd3cd8d78dc0",
+    "source_tree": "51d2f1bfba4ecf042db8c4037d9786053fc02d75",
+    "version": "1.6.3"
+  },
+  "liberusoftware/scheduler-queues": {
+    "path": "modules/scheduler-queues",
+    "reference": "5583216f6565d5cf33568e310b2d6527d523a297",
+    "repository": "https://github.com/liberusoftware/module-scheduler-queues",
+    "source_signature": "760d848cae0478aa2bdae4fd304d4e9bade935412fc9bc9faeb3962be8c75156",
+    "source_tree": "88c99c38ba9a439bfe3a35e9a093e3bec5165c45",
+    "version": "1.6.0"
+  },
+  "liberusoftware/search": {
+    "path": "modules/search",
+    "reference": "0a4b78e4c3a44f65f20f8d7a866fb579a9994940",
+    "repository": "https://github.com/liberusoftware/module-search",
+    "source_signature": "834402677c8000f66fa0dcb5b9c054b8f6d23c29d2d732fa8998ac7cc22202d2",
+    "source_tree": "3e3bd1f547484bf76a81c0880b58aea0a5b29224",
+    "version": "1.8.2"
+  },
+  "liberusoftware/search-api": {
+    "path": "modules/search-api",
+    "reference": "de4d387b081246e22aeb47149b412355c27a8c55",
+    "repository": "https://github.com/liberusoftware/module-search-api",
+    "source_signature": "1fb715fcdd3e32fe4beddd7a39977dbc79c65ea96e2dc181c85774282286da51",
+    "source_tree": "7304fa19196852f6862d8eb0f97febc0e61b628d",
+    "version": "1.6.1"
+  },
+  "liberusoftware/sessions-devices": {
+    "path": "modules/sessions-devices",
+    "reference": "f76f707dc3b657ab1cca20d56fd33286bb97b7e5",
+    "repository": "https://github.com/liberusoftware/module-sessions-devices",
+    "source_signature": "41ac3b4cd1fe704f6a8b21ed66487f18659dc109a76db0136ecd93a43bbe8c4e",
+    "source_tree": "1851e4b40ea14821ba54ffcde39a1785c7069859",
+    "version": "1.5.2"
+  },
+  "liberusoftware/sessions-devices-filament": {
+    "path": "modules/sessions-devices-filament",
+    "reference": "a6dff74af015bf6206c76ce49043a0f880088f73",
+    "repository": "https://github.com/liberusoftware/module-sessions-devices-filament",
+    "source_signature": "a7d0bda8ac359f373cf174774bfed2f777ed6c16d469e57d3aa94c68ec46647b",
+    "source_tree": "4d0cdbbe298b6dcf64d21927b6a60b7c9fbf119d",
+    "version": "1.6.3"
+  },
+  "liberusoftware/settings": {
+    "path": "modules/settings",
+    "reference": "b2fbb2a2efbb67746b4ea6986fc8064e71e3dac0",
+    "repository": "https://github.com/liberusoftware/module-settings",
+    "source_signature": "e40c485e44f55ab8a727686672618143506bcf79465be66fc14539e60bfb3eb0",
+    "source_tree": "4893b74adfd61f1e789f83242c741f70cbef3c12",
+    "version": "1.5.3"
+  },
+  "liberusoftware/settings-filament": {
+    "path": "modules/settings-filament",
+    "reference": "ac53b9e6b83a2fd25bdf1379a2de8f6b6c4dfebd",
+    "repository": "https://github.com/liberusoftware/module-settings-filament",
+    "source_signature": "80bf5363bcf2f4eb630e4329c0b1b0d52aac974226eb962de96e3505c378ca0e",
+    "source_tree": "6b0f84401ca39eddda9532a0db1a4ba1c3c49ef1",
+    "version": "1.6.4"
+  },
   "liberusoftware/tenancy": {
     "path": "modules/tenancy",
-    "reference": "5c079502cf9c82c304f37eab141c8c7d5a77b2b7",
+    "reference": "9c107d1e47b0e164cd297a5537255e61e99d8c07",
     "repository": "https://github.com/liberusoftware/module-tenancy",
-    "source_signature": "d469d350ee02b7822a5fa89a3d1bcf1bbd06fa4f8e46fc06e6644ffc88c0b8e5",
-    "source_tree": "04f69949afdcdb6c12817d536fee1706df06aa5d",
-    "version": "1.2.2"
+    "source_signature": "d9e8e8c885552ad3d292100622661bddde26dbc9493c784121ecc6b6b689dfa5",
+    "source_tree": "2ea9dca4c6a909850f2eb066ca389824490ff9fa",
+    "version": "1.2.3"
   },
   "liberusoftware/theme-support": {
     "path": "modules/theme-support",
